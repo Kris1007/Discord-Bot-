@@ -58,10 +58,5 @@ def get_response(user_input: str) -> str:
         """
     elif "rickroll" in lowered:
         return 'https://tenor.com/view/rickroll-roll-rick-never-gonna-give-you-up-never-gonna-gif-22954713'
-    elif 'kanye' in lowered:
-        response1 = requests.get(url="ENTER YOUR KANYE REST API")
-        data1 = response1.json()
-        kanye_quote = data1["quote"]
-        return f'{kanye_quote}'
     else:
         pass
